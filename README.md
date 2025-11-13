@@ -35,12 +35,12 @@ NormVision; PDF ziyaret özetlerinden, satış Excel raporlarından ve finansal 
 ```
 datasforfinalblock/
    LLM_Input_Satis_Analizi.json           # Zenginleştirilmiş satış + finans
-   SIRINLER_BAGLANTI_ELEM.-BOYA/
+   FAKE COMPANY/
       Final_Report_YYYYMMDD_HHMMSS.json    # Final rapor(lar)
    *.xlsx                                 # Kaynak veri Excel’leri
 
 Reports/Monthly/
-   SIRINLER_BAGLANTI_ELEM.BOYA/
+   FAKE_COMPANY/
       07-Temmuz/
          NormVision_KPI_*.json
          NormVision_Aylik_Rapor_*.md
@@ -63,7 +63,7 @@ DATAS_BASE=...\datasforfinalblock
 Örnekler:
 | Orijinal | Klasör | Dosya-uyumlu |
 |----------|--------|-------------|
-| `ŞİRİNLER BAĞLANTI ELEM.-BOYA` | `SIRINLER_BAGLANTI_ELEM.-BOYA` | `SIRINLER_BAGLANTI_ELEM_BOYA` |
+| `FAKE_COMPANY` | `FAKE_COMPANY` | `FAKE_COMPANY` |
 
 ---
 ## 🧪 Pipeline Aşamaları
@@ -175,7 +175,7 @@ python -m bridge.final_assembler --month 7
 ## 📌 Örnek Final Rapor (Kırpılmış)
 ```json
 {
-   "musteri_adi": "ŞİRİNLER BAĞLANTI ELEM.-BOYA",
+   "musteri_adi": "FAKE_COMPANY",
    "malzeme_analizi": {"...": "..."},
    "finansal_analiz": {
       "odeme_uyum_orani": "94.67%",
